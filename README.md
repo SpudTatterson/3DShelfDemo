@@ -4,7 +4,7 @@ This project is a demo of a 3D Product Shelf developed using Unity. It displays 
 
 ## Project Overview
 
-The **3D Product Shelf** showcases between 1 to 3 products in a rotating display. Products are fetched dynamically from a server using a JSON API. Users can interact with each product by modifying the name, price and description, with changes immediately reflected on the shelf.
+The **3D Product Shelf** showcases between 1 to 3 products in a rotating display. Products are fetched dynamically from a server using an API. Users can interact with each product by modifying the name, price and description, with changes immediately reflected on the shelf.
 
 ### Key Features
 
@@ -99,6 +99,7 @@ To test the project locally, follow these steps:
 
 1. **Singleton Pattern**: The `MonoSingleton<T>` pattern was used for classes like `ProductManager`, `PlatformManager`, and `ProductEditor`. This ensures only one instance of each exists, providing a global point of access, making it easier to manage and access shared data.
 2. **Event-Driven Communication**: To improve the separation of concerns, events are used to communicate between scripts. For instance, `OnFinishedProcessing` in `ProductManager` allows other scripts to react when products are ready without tightly coupling them.
-3. **Edit Mode**: The `ProductEditor` provides a user-friendly interface to update product details. The `ToggleEditMode()` functionality gives users a simple way to switch between browsing and editing.
-4. **Platform and Spot System**: The rotating platform with showcase spots was chosen to make the shelf visually appealing and intuitive for users to interact with multiple products.
+3. **SOLID Principles**: The project follows SOLID principles to ensure maintainability and scalability. Each class has a single responsibility, open for extension, and designed to be modular and loosely coupled for easy modification and extension.
+4. **Edit Mode**: The `ProductEditor` provides a user-friendly interface to update product details. The `ToggleEditMode()` functionality gives users a simple way to switch between browsing and editing.
+5. **Platform and Spot System**: The rotating platform with showcase spots was chosen to make the shelf visually appealing and intuitive for users to interact with multiple products.
 
